@@ -76,7 +76,7 @@ patm_BCI <- calc_patm(elv = 120, patm0 = 101325)
 
 # P-model drivers ####
 # Needed to simulate soil temperature and soil water content 
-p_model_drivers
+rsofun::p_model_drivers$forcing
 #date
 #temp (C)
 #prec (mm)
@@ -264,7 +264,7 @@ unique(biomee_forcing_FIN$year)
 
 write.csv(biomee_forcing_FIN, paste0(here::here(), "/data/inputs/biomee_forcing_FIN.csv"))
 
-## BIA forcing ####
+## BIA ####
 
 ### sitename ####
 sitename <- "BIA"
@@ -425,7 +425,7 @@ unique(biomee_forcing_BIA$year)
 
 write.csv(biomee_forcing_BIA, paste0(here::here(), "/data/inputs/biomee_forcing_BIA.csv"))
 
-## BCI forcing ####
+## BCI ####
 
 ### sitename ####
 sitename <- "BCI"
