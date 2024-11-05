@@ -41,7 +41,7 @@ PFT_reorder <- c(1,2,3,8)
 PFT_order <- tibble(PFT_species,PFT,PFT_reorder)
 PFT_order
 
-source("/home/laura/DBEN/analysis/04_DBEN_variables.R")
+source("analysis/04_DBEN_variables.R")
 
 # Carbon budget closure ----
 ## A. cwood_tile ----
@@ -337,7 +337,7 @@ BiomeE_P5_FIN_eCO2_annual_cohorts <- read.csv(paste0(here::here(), "/data/output
 BiomeE_P6_FIN_eCO2_annual_tile <- read.csv(paste0(here::here(), "/data/outputs_mod/562ppm/BiomeE_PS6_FIN_eCO2_annual_tile.csv"))
 BiomeE_P6_FIN_eCO2_annual_cohorts <- read.csv(paste0(here::here(), "/data/outputs_mod/562ppm/BiomeE_PS6_FIN_eCO2_annual_cohorts.csv"))
 
-source("/home/laura/DBEN/analysis/04_DBEN_variables.R")
+source("analysis/04_DBEN_variables.R")
 
 # Pools ----
 # 1. Carbon mass in vegetation by PFT ----

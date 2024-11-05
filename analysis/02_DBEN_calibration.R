@@ -15,7 +15,7 @@ library(patchwork)
 ## Regrowth curves ####
 # AGcwood (aboveground woody carbon) 
 benchmark_regrowth <- read.csv(paste0(here::here(), "/data/benchmarking/benchmark_regrowth_curves.csv"))
-benchmark_regrowth <- read.csv("/home/laura/DBEN/data/benchmarking/benchmark_regrowth_curves.csv")
+benchmark_regrowth <- read.csv("data/benchmarking/benchmark_regrowth_curves.csv")
 
 benchmark_regrowth_FIN <- benchmark_regrowth %>% filter(Biome=="Boreal")
 plot_regrowth_bench <- ggplot(benchmark_regrowth_FIN,aes(x=bin_num,y=AGcwood_kgCm2_med)) + 
@@ -27,7 +27,7 @@ plot_regrowth_bench <- ggplot(benchmark_regrowth_FIN,aes(x=bin_num,y=AGcwood_kgC
 plot_regrowth_bench
 
 BiomeE_P0_FIN_aCO2_annual_tile <- read.csv(paste0(here::here(), "/data/outputs_mod/412ppm/BiomeE_P0_FIN_aCO2_annual_tile.csv"))
-BiomeE_P0_FIN_aCO2_annual_tile <- read.csv("/home/laura/DBEN/data/outputs_mod/v1.0/412ppm/BiomeE_P0_FIN_aCO2_annual_tile.csv")
+BiomeE_P0_FIN_aCO2_annual_tile <- read.csv("data/outputs_mod/v1.0/412ppm/BiomeE_P0_FIN_aCO2_annual_tile.csv")
 
 
 plot_regrowth_out <- BiomeE_P0_FIN_aCO2_annual_tile %>%
