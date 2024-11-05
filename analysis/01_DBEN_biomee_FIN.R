@@ -191,7 +191,7 @@ df_soiltexture <- bind_rows(
 
 ## Define forcing data ----
 #biomee_forcing_FIN <- read.csv(paste0(here::here(), "/data/inputs/biomee_forcing_FIN.csv"))
-biomee_forcing_FIN <- read.csv("/home/laura/DBEN/data/inputs/biomee_forcing_FIN.csv")
+biomee_forcing_FIN <- read.csv("data/inputs/biomee_forcing_FIN.csv")
 biomee_forcing_FIN
 df_forcing <- biomee_forcing_FIN
 
@@ -235,7 +235,7 @@ biomee_annual_tile <- read.csv(paste0(here::here(), "/data/outputs_mod/412ppm/Bi
 biomee_annual_cohorts <- read.csv(paste0(here::here(), "/data/outputs_mod/412ppm/BiomeE_P0_FIN_aCO2_annual_cohorts.csv"))
 
 # Figures ----
-source("/home/laura/DBEN/analysis/03_DBEN_figures.R")
+source("analysis/03_DBEN_figures.R")
 
 ## Plant C (Biomass) ----
 plantC_tile_fig(biomee_annual_tile)

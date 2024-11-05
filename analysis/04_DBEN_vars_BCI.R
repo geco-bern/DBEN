@@ -41,7 +41,7 @@ PFT_reorder <- c(5,6,7,8)
 PFT_order <- tibble(PFT_species,PFT,PFT_reorder)
 PFT_order
 
-source("/home/laura/DBEN/analysis/04_DBEN_variables.R")
+source("analysis/04_DBEN_variables.R")
 
 # Carbon budget closure ----
 ## A. cwood_tile ----
